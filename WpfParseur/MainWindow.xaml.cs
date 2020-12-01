@@ -129,15 +129,21 @@ namespace WpfParseur
                 }
             }
 
+            
+           
+
             ResultConvert.Text = resulatConversion.ToString();
 
 
         }
 
-        }
-   
-      
-    
-    
+    }
+
+
+
+
+
 }
+
+ 
 
