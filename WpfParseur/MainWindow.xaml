@@ -1,0 +1,37 @@
+﻿<Window x:Class="WpfParseur.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfParseur"
+        mc:Ignorable="d"
+        Title="Parseur" Height="250" Width="400">
+
+    <StackPanel>
+        <Label Content="Conversion Chiffre Romain :"></Label>
+        <Grid >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition  Width="*" />
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+           
+            <Button  Grid.Column="0" Grid.Row="0" Margin="0 20"  x:Name="ConvertBtn" Click="ConvertBtn_Click"  Content="Convertir la chiffre Romain"> </Button>
+            <Label Content="Entrer Chiffre Romain :" Grid.Column="0" Grid.Row="1" FontFamily="Bold"></Label>
+            <TextBox  x:Name="EnterChiffreRomain" Grid.Column="1" Grid.Row="1"   Margin="0 10"></TextBox>
+            <TextBox  x:Name="ResultConvert" Grid.Row="2" Grid.Column="2" Text=" résulat"></TextBox>
+            <Label Content="Resultat Conversion :" Grid.Column="0" Grid.Row="2" FontFamily="Bold"></Label>
+        </Grid>
+
+       
+       
+        
+        
+    </StackPanel>
+    
+</Window>
